@@ -163,7 +163,7 @@ Amazon EKS is a fully managed Kubernetes service that makes it easy to deploy, m
 Here is some short information about Amazon EKS that you will need to know to pass the AWS Certified Solutions Architect Associate exam:
 
 - EKS is a fully managed Kubernetes service.
-- EKS provides a Kubernetes API server, a Kubernetes control plane, and Kubernetes worker nodes. As of January 24, 2025, Amazon EKS supports Kubernetes version 1.32.
+- EKS provides a Kubernetes API server, a Kubernetes control plane, and Kubernetes worker nodes. As of May 29, 2025, Amazon EKS supports Kubernetes version 1.33.
 - EKS provides a variety of features to help you manage your Kubernetes applications, including Kubernetes orchestration, enhanced security, flexible load balancing options (ALB, NLB, CLB), and comprehensive monitoring (CloudWatch Container Insights).
 
 Here are some additional details about Amazon EKS that you may want to know:
