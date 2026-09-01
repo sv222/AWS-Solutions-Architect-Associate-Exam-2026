@@ -68,15 +68,15 @@ Amazon EC2 provides secure, resizable compute capacity in the cloud. Key exam co
 - **Instance Types**:
   - General Purpose (M7g, T4g, M7i, T3, M7a, M7gd)
   - Compute Optimized (C7g, C7i, C7a, C7gd)
-  - Memory Optimized (R7iz, X2idn, X2iedn, R7a, R7g, U7i family, I7i, I7ie)
+  - Memory Optimized (R7iz, R7a, R7g, R7i, R8g, X2idn, X2iedn, X8g, U7i)
   - Accelerated Computing (P4d, G5, VT1, P5en, Trn2)
-  - Storage Optimized (Im4gn, Is4gen, I4i)
+  - Storage Optimized (Im4gn, Is4gen, I4i, I7i, I7ie)
 
 - **Pricing Models**:
   - On-Demand (short-term needs)
-  - Savings Plans (1-3 year commitment, restricted to single end customer usage from June 1, 2025)
+  - Savings Plans (1-3 year commitment; discount sharing across accounts in an organization can be configured)
   - Spot Instances (up to 90% discount)
-  - Reserved Instances (capacity reservation, restricted to single end customer usage from June 1, 2025)
+  - Reserved Instances (capacity reservation; discount sharing across accounts in an organization can be configured)
   - Dedicated Hosts (physical servers for your use)
   - Dedicated Instances (EC2 instances on single-tenant hardware)
   - Capacity Reservations (reserve EC2 capacity for any duration)
@@ -90,7 +90,7 @@ Amazon EC2 provides secure, resizable compute capacity in the cloud. Key exam co
 
 - **Best Practices**:
   - Use Instance Metadata Service (IMDSv2) for enhanced security
-  - Enable Detailed Monitoring for <1-minute metrics (CloudWatch)
+  - Enable Detailed Monitoring for 1-minute metrics (CloudWatch)
   - Leverage Placement Groups (Cluster, Spread, Partition) for specific workload needs
   - Utilize EC2 Auto Scaling for elasticity and high availability
   - Implement AWS Systems Manager for operational automation
