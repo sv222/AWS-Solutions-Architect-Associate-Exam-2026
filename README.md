@@ -128,7 +128,7 @@ ECS is a powerful tool for managing containerized applications. It is easy to us
 
 ## Amazon Elastic Container Registry (ECR)
 
-Amazon ECR is a fully managed container registry that makes it easy to store, manage, and deploy Docker container images and Open Container Initiative (OCI) compatible artifacts. ECR is integrated with Amazon Elastic Container Service (ECS) and Amazon Kubernetes Service (EKS), so you can easily deploy your containerized applications to production.
+Amazon ECR is a fully managed container registry that makes it easy to store, manage, and deploy Docker container images and Open Container Initiative (OCI) compatible artifacts. ECR is integrated with Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes Service (EKS), so you can easily deploy your containerized applications to production.
 
 Here is some short information about Amazon ECR that you will need to know to pass the AWS Certified Solutions Architect Associate exam:
 
@@ -163,7 +163,7 @@ Amazon EKS is a fully managed Kubernetes service that makes it easy to deploy, m
 Here is some short information about Amazon EKS that you will need to know to pass the AWS Certified Solutions Architect Associate exam:
 
 - EKS is a fully managed Kubernetes service.
-- EKS provides a Kubernetes API server, a Kubernetes control plane, and Kubernetes worker nodes. As of May 29, 2025, Amazon EKS supports Kubernetes version 1.33.
+- EKS provides a Kubernetes API server, a Kubernetes control plane, and Kubernetes worker nodes. As of June 2026, Amazon EKS supports Kubernetes version 1.36.
 - EKS provides a variety of features to help you manage your Kubernetes applications, including Kubernetes orchestration, enhanced security, flexible load balancing options (ALB, NLB, CLB), and comprehensive monitoring (CloudWatch Container Insights).
 
 Here are some additional details about Amazon EKS that you may want to know:
@@ -179,7 +179,7 @@ EKS is a powerful tool for managing Kubernetes applications. It is easy to use a
 
 ## AWS Lambda
 
-AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers. Lambda executes your code only when needed and scales automatically, so you can focus on your code and not on managing infrastructure. Lambda supports a variety of programming languages and runtimes (e.g., Node.js 22, Python 3.13, Java 21, .NET 9, Ruby 3.4, and custom runtimes for Go).
+AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers. Lambda executes your code only when needed and scales automatically, so you can focus on your code and not on managing infrastructure. Lambda supports a variety of programming languages and runtimes (e.g., Node.js 22 and 24, Python 3.13 and 3.14, Java 21 and 25, .NET 8 and 10, Ruby 3.4, and OS-only runtimes like provided.al2023, commonly used for Go).
 
 Here is some short information about AWS Lambda that you will need to know to pass the AWS Certified Solutions Architect Associate exam:
 
