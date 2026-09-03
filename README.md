@@ -353,7 +353,7 @@ Elastic Block Store (EBS) is a block-level storage service designed for use with
 
 EBS volumes are available in five volume types:
 
-- **General Purpose SSD (gp3):** Recommended for most workloads. Baseline 3,000 IOPS and 125 MB/s throughput, scalable to 16,000 IOPS and 1,000 MB/s.
+- **General Purpose SSD (gp3):** Recommended for most workloads. Baseline 3,000 IOPS and 125 MB/s throughput, scalable to 80,000 IOPS and 2,000 MB/s.
 - **Provisioned IOPS SSD (io2 Block Express):** Highest performance SSD for mission-critical applications. Supports up to 256,000 IOPS and 4,000 MB/s throughput per volume. Supports Multi-Attach.
 - **Throughput Optimized HDD (st1):** Cost-effective for frequently accessed, throughput-intensive workloads like big data.
 - **Cold HDD (sc1):** Lowest cost HDD for less frequently accessed workloads.
@@ -361,7 +361,7 @@ EBS volumes are available in five volume types:
 - **gp2 (Legacy):** Previous generation General Purpose SSD.
 - **EBS Snapshots Archive:** Cost-effective long-term storage for EBS snapshots.
 
-EBS volumes can be attached to EC2 instances at any time, and they can be resized up or down without downtime. EBS volumes can also be used to create snapshots, which are point-in-time copies of an EBS volume. Snapshots can be used to create new EBS volumes, or to restore an EBS volume to a previous state.
+EBS volumes can be attached to EC2 instances at any time, and they can be scaled up without downtime; volumes cannot be shrunk. EBS volumes can also be used to create snapshots, which are point-in-time copies of an EBS volume. Snapshots can be used to create new EBS volumes, or to restore an EBS volume to a previous state.
 
 EBS is an important part of the AWS Well-Architected Framework. The Well-Architected Framework is a set of best practices for designing and building cloud architectures. The Well-Architected Framework recommends using EBS for persistent storage for all applications running on EC2 instances.
 
@@ -369,7 +369,7 @@ Here is some additional information about EBS that you will need to know to pass
 
 - EBS volumes are attached to EC2 instances using block device mappings.
 - EBS volumes can be encrypted at rest using AWS Key Management Service (KMS).  
-- EBS volumes can be encrypted in transit using Transport Layer Security (TLS).
+  - When a volume is encrypted, data in transit between the instance and the volume is also encrypted.
 - EBS volumes can be used to create RAID arrays.
 - EBS volumes can be used to create boot volumes for EC2 instances.
 - EBS volumes can be used to create root volumes for EC2 instances.
@@ -389,16 +389,14 @@ Here is some short information about EFS that you will need to know to pass the 
 - EFS can be used with EC2 instances, Amazon Elastic Container Service (ECS), Amazon Elastic Kubernetes Service (EKS), AWS Lambda functions, and AWS Fargate.
 - EFS can be used to store data for a wide range of workloads, including web applications, content management systems, databases, and machine learning.
 - EFS One Zone storage class for cost-optimized storage.
-- EFS Replication for cross-region data protection.
+  - EFS Replication for data protection across regions or Availability Zones.
 
 Here are some additional details about EFS that you may want to know:
 
 - EFS uses the Network File System (NFS) protocol to provide access to file systems.
 - EFS file systems can be mounted on EC2 instances in your virtual private cloud (VPC).  
 - EFS file systems can be accessed from on-premises servers using AWS Direct Connect or AWS VPN.
-- EFS file systems can be encrypted using AWS Key Management Service (KMS).
-- EFS file systems can be used to create RAID arrays.
-- EFS file systems can be used to create boot volumes for EC2 instances.
+  - EFS file systems can be encrypted using AWS Key Management Service (KMS).
 
 ## Amazon Relational Database Service (RDS)  
 
