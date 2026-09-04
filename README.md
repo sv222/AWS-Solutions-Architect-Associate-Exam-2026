@@ -405,7 +405,7 @@ Amazon Relational Database Service (RDS) is a managed database service that prov
 Here is some short information about RDS that you will need to know to pass the AWS Certified Solutions Architect Associate exam:
 
 - RDS is a fully managed service, so you don't have to worry about provisioning, managing, or scaling your database.
-- RDS supports a variety of database engines, including MySQL, PostgreSQL, Oracle Database, Microsoft SQL Server, Amazon Aurora, MariaDB, and SAP HANA.
+- RDS supports a variety of database engines, including MySQL, PostgreSQL, MariaDB, Oracle Database, Microsoft SQL Server, IBM Db2, and Amazon Aurora.
 - RDS provides high availability and durability for your databases.
 - RDS offers a variety of features to help you secure your databases, including encryption, access control, auditing, and integration with AWS Secrets Manager.
 - RDS can be used to deploy a wide range of database workloads, including web applications, content management systems, and enterprise applications.
@@ -415,8 +415,8 @@ Here are some additional details about RDS that you may want to know:
 - RDS instances can be deployed in a variety of deployment options, including single-AZ, Multi-AZ (with standby or Multi-AZ DB cluster deployments), and read replicas.
 - RDS instances can be backed up automatically to Amazon Simple Storage Service (S3).
 - RDS instances can be restored from backups to create new RDS instances.  
-- RDS instances can be scaled up or down without downtime.
-- RDS instances can be migrated from one database engine to another.
+- RDS storage can be scaled up without downtime, and Multi-AZ deployments minimize downtime during instance changes.
+- RDS databases can be migrated between engines using the AWS Schema Conversion Tool and AWS Database Migration Service.
 
 ## Amazon Aurora  
 
@@ -426,7 +426,7 @@ Here is some short information about Aurora that you will need to know to pass t
 
 - Aurora is a fully managed service, so you don't have to worry about provisioning, managing, or scaling your database.
 - Aurora is compatible with MySQL and PostgreSQL, so developers can use existing code, skills, and tools to build new applications, or migrate existing applications to the cloud.
-- Aurora is up to five times faster than standard MySQL and PostgreSQL databases, and it offers 99.99% availability.
+- Aurora delivers up to six times the throughput of standard MySQL and PostgreSQL databases, and it offers 99.99% availability.
 - Aurora is cost-effective, and it offers a variety of features to help you save money, such as automatic scaling, reserved instances, and serverless options.
 - Aurora can be used to deploy a wide range of database workloads, including web applications, content management systems, enterprise applications, and machine learning.
 
@@ -456,7 +456,7 @@ Here are some additional details about DynamoDB that you may want to know:
 
 - DynamoDB uses a key-value and document data model, supporting both eventually consistent and strongly consistent reads.
 - DynamoDB tables are made up of items, which are collections of attribute-value pairs.
-- DynamoDB tables can have one or more primary keys, which are used to identify and retrieve items.
+- Each DynamoDB table has a single primary key, either a partition key alone or a partition key plus sort key, which is used to identify and retrieve items.
 - DynamoDB tables can also have secondary indexes (Global Secondary Indexes and Local Secondary Indexes), which are used to query items based on attribute values.
 - DynamoDB offers a variety of APIs for accessing and managing data, including the AWS SDKs, the AWS CLI, and the AWS Management Console.
 
@@ -478,7 +478,7 @@ Here is some short information about Redshift that you will need to know to pass
 - Redshift is a fully managed service, so you don't have to worry about provisioning, managing, or scaling your data warehouse.  
 - Redshift is up to 100 times faster than traditional data warehouses.
 - Redshift is compatible with standard SQL.
-- Redshift is cost-effective, and it offers a variety of features to help you save money, such as reserved instances and spot instances.
+- Redshift is cost-effective, and it offers a variety of features to help you save money, such as reserved nodes.
 - Redshift can be used to deploy a wide range of data warehouse workloads, including analytics, business intelligence, and machine learning.
 
 Here are some additional details about Redshift that you may want to know:
