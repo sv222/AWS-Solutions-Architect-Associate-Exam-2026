@@ -22,7 +22,7 @@ The information is organized into the following sections:
   - [Amazon Virtual Private Cloud (VPC)](#amazon-virtual-private-cloud-vpc)
   - [Amazon Route 53](#amazon-route-53)
   - [Amazon Elastic Load Balancing (ELB)](#amazon-elastic-load-balancing-elb)
-  - [AWS Transfer for SFTP](#aws-transfer-for-sftp)
+  - [AWS Transfer Family](#aws-transfer-family)
   - [AWS Direct Connect](#aws-direct-connect)
   - [Amazon Simple Storage Service (S3)](#amazon-simple-storage-service-s3)
   - [Amazon Elastic Block Store (EBS)](#amazon-elastic-block-store-ebs)
@@ -271,29 +271,29 @@ Here are some additional details about Amazon ELB that you may want to know:
 
 Elastic Load Balancing is a powerful tool for distributing incoming traffic across multiple targets and ensuring that your applications are highly available and scalable. It is easy to use and it provides a variety of features to help you meet your load balancing needs.
 
-## AWS Transfer for SFTP
+## AWS Transfer Family
 
-AWS Transfer for SFTP is a managed service that makes it easy to transfer files over the Secure File Transfer Protocol (SFTP). It provides a secure and reliable way to transfer files between your on-premises systems and AWS storage services, such as Amazon S3 and Amazon Elastic File System (EFS).
+AWS Transfer Family is a managed service that makes it easy to transfer files over SFTP, FTPS, FTP, and AS2. It provides a secure and reliable way to transfer files between your on-premises systems and AWS storage services, such as Amazon S3 and Amazon Elastic File System (EFS).
 
-Here is some short information about AWS Transfer for SFTP that you will need to know to pass the AWS Certified Solutions Architect Associate exam:
+Here is some short information about AWS Transfer Family that you will need to know to pass the AWS Certified Solutions Architect Associate exam:
 
-- AWS Transfer for SFTP is a managed service that makes it easy to transfer files over SFTP, FTPS, and FTP.
-- AWS Transfer for SFTP provides a secure and reliable way to transfer files between your on-premises systems and AWS storage services.
-- AWS Transfer for SFTP supports a variety of SFTP clients, including WinSCP, Cyberduck, and FileZilla.
-- AWS Transfer for SFTP provides a variety of features to help you manage your file transfers, including:
+- AWS Transfer Family is a managed service that makes it easy to transfer files over SFTP, FTPS, and FTP.
+- AWS Transfer Family provides a secure and reliable way to transfer files between your on-premises systems and AWS storage services.
+- AWS Transfer Family supports a variety of SFTP clients, including WinSCP, Cyberduck, and FileZilla.
+- AWS Transfer Family provides a variety of features to help you manage your file transfers, including:
 - User and group management (including integration with AWS IAM and Active Directory)
 - Access control (using IAM roles and policies)
 - Activity logging (via CloudTrail)
 - File transfer notifications (using Amazon SNS)
 - Support for multiple authentication methods, including password, SSH keys, and directory service integration.
 
-Here are some additional details about AWS Transfer for SFTP that you may want to know:
+Here are some additional details about AWS Transfer Family that you may want to know:
 
-- AWS Transfer for SFTP can be used to transfer files of any size, from small text files to large video files.
-- AWS Transfer for SFTP can be used to transfer files between your on-premises systems and AWS storage services in any AWS Region.  
-- AWS Transfer for SFTP can be integrated with a variety of other AWS services, such as Amazon CloudTrail and Amazon CloudWatch.
+- AWS Transfer Family can be used to transfer files of any size, from small text files to large video files.
+- AWS Transfer Family can be used to transfer files between your on-premises systems and AWS storage services in any AWS Region.  
+- AWS Transfer Family can be integrated with a variety of other AWS services, such as Amazon CloudTrail and Amazon CloudWatch.
 
-AWS Transfer for SFTP is a powerful tool for transferring files over SFTP securely and reliably. It is easy to use and it provides a variety of features to help you manage your file transfers efficiently.
+AWS Transfer Family is a powerful tool for transferring files over SFTP securely and reliably. It is easy to use and it provides a variety of features to help you manage your file transfers efficiently.
 
 ## AWS Direct Connect
 
@@ -310,8 +310,8 @@ Here is some short information about AWS Direct Connect that you will need to kn
 
 Here are some additional details about AWS Direct Connect that you may want to know:
 
-- AWS Direct Connect is a global service with locations in over 90 cities around the world.  
-- AWS Direct Connect offers a variety of bandwidth options, from 1 Gbps to 100 Gbps.
+- AWS Direct Connect is a global service with over 140 Direct Connect locations around the world.  
+- AWS Direct Connect offers a variety of bandwidth options, from 50 Mbps (hosted connections) up to 400 Gbps (dedicated connections).
 - AWS Direct Connect can be used to create a variety of network configurations, including site-to-site VPNs, point-to-point connections, hub-and-spoke networks, and integration with AWS Transit Gateway for simplified network management.
 - AWS Direct Connect can be integrated with a variety of other AWS services, such as AWS Virtual Private Cloud (VPC) and AWS Transit Gateway.
 
@@ -526,7 +526,7 @@ Here are some additional details about Amazon SNS that you may want to know:
 - SNS topics can have multiple subscribers, and subscribers can subscribe to multiple topics.
 - SNS messages can be sent in a variety of formats, including JSON, XML, and raw text.
 - SNS messages can be encrypted at rest (SSE) and in transit (HTTPS).
-- SNS messages can be delivered to a variety of endpoints, including email, SMS, HTTP/S, Amazon SQS queues, AWS Lambda functions, mobile push notifications, and mobile push notifications.
+- SNS messages can be delivered to a variety of endpoints, including email, SMS, HTTP/S, Amazon SQS queues, AWS Lambda functions, and mobile push notifications.
 - SNS can be integrated with a variety of other AWS services, such as Amazon EC2, Amazon Lambda, Amazon CloudWatch, AWS EventBridge, and AWS Kinesis Data Firehose.
 - SNS supports FIFO topics for strict message ordering, deduplication, and message grouping.
 
@@ -544,7 +544,7 @@ Amazon API Gateway is a fully managed service that makes it easy to create, publ
 Here is some short information about API Gateway that you will need to know to pass the AWS Certified Solutions Architect Associate exam:
 
 - API Gateway is a fully managed service, so you don't have to worry about provisioning, managing, or scaling your API infrastructure.
-- API Gateway supports REST APIs, WebSocket APIs, HTTP APIs (optimized for serverless workloads), and gRPC APIs.
+- API Gateway supports REST APIs, WebSocket APIs, and HTTP APIs (optimized for serverless workloads).
 - API Gateway provides a variety of features to help you manage your APIs, including authorization and authentication, monitoring, caching, and versioning.
 - API Gateway can be used to create APIs that access data, applications, and services hosted on AWS or on-premises.
 
