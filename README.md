@@ -622,7 +622,7 @@ Here is some short information you will need to pass the AWS Certified Solutions
 - CloudTrail is a fully managed service that continuously logs all API calls made to your AWS account and your resources.
 - CloudTrail logs can be delivered to Amazon S3 and Amazon CloudWatch Logs.
 - CloudTrail logs can be used to track user activity, troubleshoot problems, and audit your AWS environment.
-- CloudTrail logs can be retained for up to two years.
+- CloudTrail event history retains the last 90 days of management events; CloudTrail Lake can retain events for up to 10 years.
 
 Here are some additional details that you may want to know:
 
@@ -682,7 +682,7 @@ Here is some short information you will need to pass the AWS Certified Solutions
 - KMS is a managed service that makes it easy to create and control the cryptographic keys that are used to protect your data.
 - KMS provides a range of features that make it easy to manage your keys securely, including key generation, key storage, key rotation, and key auditing.
 - KMS can be used to encrypt data at rest and in transit.
-- KMS encrypts data up to 4KB in size per call. For larger data, use envelope encryption with AWS Encryption Encryption SDK.
+- KMS encrypts data up to 4KB in size per call. For larger data, use envelope encryption with the AWS Encryption SDK.
 - KMS supports custom key stores backed by CloudHSM or external key managers.
 - KMS can be used to manage keys for a variety of AWS services, including Amazon S3, Amazon RDS, Amazon EBS, Amazon DynamoDB, and AWS Lambda.
 - KMS supports symmetric and asymmetric encryption keys, and HMAC keys.
@@ -697,18 +697,17 @@ Example use cases of KMS:
 
 - **Encrypting data at rest:** KMS can be used to encrypt data at rest in Amazon S3, Amazon RDS, and Amazon EBS. This helps to protect your data from unauthorized access, even if the underlying storage media is compromised.
 - **Encrypting data in transit:** KMS can be used to encrypt data in transit between AWS services. This helps to protect your data from eavesdropping and man-in-the-middle attacks.
-- **Managing keys for a variety of AWS services:** KMS can be used to manage keys for a variety of AWS services, in addition to Amazon S3, Amazon RDS, and Amazon EBS. This includes services such as Amazon CloudFront, Amazon Elasticsearch Service, and Amazon Redshift.
+- **Managing keys for a variety of AWS services:** KMS can be used to manage keys for a variety of AWS services, in addition to Amazon S3, Amazon RDS, and Amazon EBS. This includes services such as Amazon CloudFront, Amazon OpenSearch Service, and Amazon Redshift.
 
 ## AWS Security Hub  
 
 AWS Security Hub provides centralized security governance across AWS accounts with these key exam-relevant features:
 
 - **Compliance Standards**:
-  - PCI DSS v4.0 (latest update)
   - AWS Foundational Security Best Practices (FSBP)
   - CIS AWS Foundations Benchmark
-  - NIST SP 800-53
-  - ISO 27001
+  - PCI DSS (v3.2.1 and v4.0.1)
+  - NIST SP 800-53 Rev. 5
 - **Automated Findings Correlation**: Groups related findings from GuardDuty, Inspector, Macie, IAM Access Analyzer, and other integrated services.
 - **Security Score**: Quantitative measure of compliance status and overall security posture.
 - **Cross-Region/Account Aggregation**: Centralized view of security posture across multiple AWS accounts and regions.
@@ -1015,7 +1014,7 @@ GuardDuty is a powerful tool for improving the security of your AWS accounts and
 
 ## Amazon Inspector
 
-Amazon Inspector is an automated security assessment service that helps you identify and remediate potential security vulnerabilities in your Amazon Elastic Compute Cloud (Amazon EC2) instances and Amazon Elastic Container Service (Amazon ECS) containers.
+Amazon Inspector is an automated security assessment service that helps you identify and remediate potential security vulnerabilities in your Amazon EC2 instances, container images stored in Amazon ECR, and AWS Lambda functions.
 
 Inspector uses a variety of assessment techniques, including static code analysis, dynamic analysis, and network analysis, to identify security vulnerabilities. Inspector also provides recommendations on how to remediate the vulnerabilities that it finds.
 
@@ -1023,7 +1022,7 @@ Inspector is a valuable tool for improving the security of your AWS workloads. I
 
 **Here is some short information about Amazon Inspector that you will need to know to pass the AWS Certified Solutions Architect Associate exam:**
 
-- Inspector is an automated security assessment service that helps you identify and remediate potential security vulnerabilities in your Amazon EC2 instances and Amazon ECS containers.
+- Inspector is an automated security assessment service that helps you identify and remediate potential security vulnerabilities in your Amazon EC2 instances, Amazon ECR container images, and AWS Lambda functions.
 - Inspector uses a variety of assessment techniques to identify security vulnerabilities, including automated agent-based scanning for EC2 instances and agentless scanning for container images in ECR.
 - Inspector also provides recommendations on how to remediate the vulnerabilities that it finds, prioritizing them by severity.
 - Inspector supports continuous scanning of your environment.
@@ -1050,7 +1049,7 @@ Macie uses a variety of techniques to discover and classify sensitive data, incl
 Once Macie has identified and classified sensitive data, it provides you with a variety of features to help you to protect it, including:
 
 - **Alerts:** Macie can generate alerts when it detects sensitive data that is being accessed or shared in a way that violates your security policies.
-- **Encryption:** Macie can help you to encrypt sensitive data at rest and in transit.
+- **Encryption reports:** Macie reports on how your S3 objects are encrypted (SSE-S3, SSE-KMS) and flags buckets with weak or missing encryption protections.
 - **Auditing:** Macie can provide you with audit reports on how your sensitive data is being accessed and shared.
 
 Macie is a valuable tool for any organization that is using AWS S3 to store sensitive data. It can help you to identify and protect your sensitive data from unauthorized access, theft, and loss.
