@@ -732,7 +732,7 @@ Here are some additional details that you may want to know:
 Example use cases of Security Hub:
 
 - **Identify and remediate security issues:** Security Hub aggregates findings across numerous AWS security services (e.g., GuardDuty, Inspector, Macie, IAM Access Analyzer) and partner solutions.
-- **Meet compliance requirements:** Automated compliance checks for various industry standards (e.g., PCI DSS, HIPAA, ISO 27001, NIST).
+- **Meet compliance requirements:** Automated compliance checks against various security standards (e.g., PCI DSS, CIS AWS Foundations Benchmark, NIST).
 - **Security Automation:** Integrated with AWS Systems Manager Automation and AWS Lambda for automated remediation workflows.
 - **Centralized Security Operations:** Provides a single pane of glass for security posture management across your AWS environment.
 
@@ -916,7 +916,7 @@ Here is some short information about AWS Step Functions that you will need to kn
 
 - AWS Step Functions is a serverless workflow service that makes it easy to coordinate the execution of distributed applications and microservices.
 - It allows you to define workflows as a series of steps, and then Step Functions will take care of executing those steps in the correct order, handling retries and errors automatically.
-- Step Functions can integrate with a variety of AWS services, including AWS Lambda, Amazon S3, Amazon DynamoDB, Amazon SNS, Amazon SQS, and over 200 other AWS services directly.
+- Step Functions can integrate with a variety of AWS services, including AWS Lambda, Amazon S3, Amazon DynamoDB, Amazon SNS, Amazon SQS, and over 220 AWS services directly.
 - Step Functions is a highly scalable and reliable service that can handle millions of workflows per second, with built-in error handling, retries, and parallel execution.
 - It is also a cost-effective service, as you only pay for the state transitions and executions.
 - Step Functions supports two types of workflows: Standard Workflows (long-running, durable, auditable) and Express Workflows (high-volume, short-duration, event-driven).
@@ -929,7 +929,7 @@ Here are some additional details about AWS Step Functions that you may want to k
 - Step Functions workflows can be monitored and managed using the AWS Management Console, the AWS CLI, AWS SDKs, and integrated with CloudWatch and X-Ray for observability.
 - Step Functions Distributed Map allows for processing large datasets with parallel iterations.
 - Step Functions supports Workflow Studio for visual workflow design and orchestration.
-- Step Functions supports integration with over 200 AWS services, including new service integrations in 2024-2025.
+- Step Functions supports integration with over 220 AWS services.
 
 Here is an example of how AWS Step Functions can be used to build a serverless application:
 
@@ -963,13 +963,13 @@ Kinesis consists of three core components:
 
 - **Kinesis Data Streams:** This service captures and processes streaming data in real time. Data can be ingested into Kinesis Data Streams from a variety of sources, such as IoT devices, web applications, and server logs.
 - **Kinesis Data Firehose:** This service delivers streaming data to data lakes and analytics applications. Kinesis Data Firehose can transform and buffer data before delivering it to its destination, making it easy to integrate with a variety of data processing systems.
-- **Kinesis Data Analytics:** This service makes it easy to process streaming data using Apache Flink and Apache Spark. Kinesis Data Analytics provides a variety of built-in libraries and connectors, making it easy to get started with real-time data processing.
+- **Managed Service for Apache Flink (formerly Kinesis Data Analytics):** This service makes it easy to process streaming data in real time using Apache Flink, with built-in libraries and connectors for real-time data processing.
 
 Here is some short information about Amazon Kinesis that you will need to know to pass the AWS Certified Solutions Architect Associate exam:
 
 - **Kinesis Data Streams:** A highly scalable and durable real-time data streaming service that can continuously capture and store gigabytes of data per second from hundreds of thousands of sources.
 - **Kinesis Data Firehose:** A fully managed service for delivering real-time streaming data to destinations like Amazon S3, Amazon Redshift, Amazon OpenSearch Service, and Splunk. It can transform, buffer, and compress data before delivery.
-- **Kinesis Data Analytics:** A fully managed service that makes it easy to process and analyze streaming data in real time using Apache Flink or SQL.
+- **Managed Service for Apache Flink:** A fully managed service that makes it easy to process and analyze streaming data in real time using Apache Flink.
 - **Kinesis Video Streams:** A fully managed service that makes it easy to securely stream video from connected devices to AWS for analytics, machine learning (ML), and other processing.
 
 Here are some additional details about Amazon Kinesis that you may want to know:
@@ -978,7 +978,7 @@ Here are some additional details about Amazon Kinesis that you may want to know:
 - Kinesis Data Streams is scalable, allowing you to easily adjust shard capacity to handle varying data ingestion rates.
 - Kinesis Data Streams is secure, with data encrypted at rest (KMS) and in transit (HTTPS).
 - Kinesis Data Firehose is a cost-effective and serverless service for delivering streaming data to various destinations.
-- Kinesis Data Analytics is a serverless service that simplifies real-time data processing with built-in connectors and templates.
+- Amazon Managed Service for Apache Flink is a serverless service that simplifies real-time data processing with built-in connectors and templates.
 - Kinesis Video Streams provides secure, durable, and cost-effective storage for video streams.
 
 Amazon Kinesis is a powerful and flexible tool that can be used to build and run a wide variety of real-time data processing applications.
@@ -1125,7 +1125,7 @@ CodePipeline can be integrated with a variety of AWS services, such as Amazon S3
 
 - AWS CodePipeline is a continuous delivery service that helps you automate the release and deployment process for your applications.
 - CodePipeline works by modeling and automating the steps required to release your software, such as retrieving the code from your source code repository, compiling, packaging, and testing your code, and deploying your code to your production environment.
-- CodePipeline can be integrated with a variety of AWS services, such as Amazon S3, Amazon ECR, AWS Lambda, AWS CloudFormation, and AWS CodeStar.
+- CodePipeline can be integrated with a variety of AWS services, such as Amazon S3, Amazon ECR, AWS Lambda, and AWS CloudFormation.
 
 **Here are some additional details about AWS CodePipeline that you may want to know:**
 
@@ -1145,9 +1145,6 @@ Overall, AWS CodePipeline is a valuable tool for any organization that is develo
 
 **In addition to the above, here are some other things to keep in mind about AWS CodePipeline:**
 
-- CodePipeline can be used to automate the release and deployment process for applications of all sizes, from small websites to large enterprise applications.
-- CodePipeline can be used to automate the release and deployment process for applications that are developed using a variety of programming languages and frameworks.
-- CodePipeline can be used to automate the release and deployment process for applications that are deployed to a variety of environments, including on-premises environments, cloud environments, and hybrid environments.
 - CodePipeline supports pipeline templates for quick setup.
 
 AWS CodePipeline is a powerful tool for automating the release and deployment process for your applications. It is easy to use and it provides a variety of features to help you improve the frequency, reliability, and risk of your releases.
@@ -1186,8 +1183,6 @@ Overall, AWS CodeBuild is a valuable tool for any organization that is developin
 
 **In addition to the above, here are some other things to keep in mind about AWS CodeBuild:**
 
-- CodeBuild can be used to build and test code for applications that are developed using a variety of programming languages and frameworks.
-- CodeBuild can be used to build and test code for applications that are deployed to a variety of environments, including on-premises environments, cloud environments, and hybrid environments.
 - CodeBuild can be integrated with a variety of CI/CD tools, such as AWS CodePipeline, Jenkins, and CircleCI.
 - CodeBuild supports running builds in a VPC for private network access.
 
@@ -1226,8 +1221,6 @@ Overall, AWS CodeDeploy is a valuable tool for any organization that is developi
 
 **In addition to the above, here are some other things to keep in mind about AWS CodeDeploy:**
 
-- CodeDeploy can be used to deploy applications that are developed using a variety of programming languages and frameworks.
-- CodeDeploy can be used to deploy applications that are deployed to a variety of environments, including on-premises environments, cloud environments, and hybrid environments.
 - CodeDeploy can be integrated with a variety of DevOps tools, such as AWS CodePipeline, Jenkins, and CircleCI.
 - CodeDeploy uses an AppSpec file to manage deployment configurations.
 
@@ -1235,7 +1228,7 @@ AWS CodeDeploy is a powerful and flexible tool for automating the deployment pro
 
 ## AWS CodeCommit
 
-AWS CodeCommit is a fully managed, highly scalable, secure source control service that hosts private Git repositories. CodeCommit makes it easy for teams to collaborate on code development and track changes over time.
+AWS CodeCommit is a fully managed, highly scalable, secure source control service that hosts private Git repositories. AWS closed CodeCommit to new customers on July 25, 2024; existing customers can continue using the service. CodeCommit makes it easy for teams to collaborate on code development and track changes over time.
 
 CodeCommit is a fully managed service, so you don't need to provision or manage any servers. CodeCommit also provides a variety of security features to help you protect your code, such as encryption at rest and in transit, and integration with AWS IAM for access control.
 
@@ -1268,9 +1261,6 @@ Overall, AWS CodeCommit is a valuable tool for any organization that is developi
 
 **In addition to the above, here are some other things to keep in mind about AWS CodeCommit:**
 
-- CodeCommit can be used to host repositories for applications of all sizes, from small websites to large enterprise applications.
-- CodeCommit can be used to host repositories for applications that are developed using a variety of programming languages and frameworks.
-- CodeCommit can be used to host repositories for applications that are deployed to a variety of environments, including on-premises environments, cloud environments, and hybrid environments.
 - CodeCommit supports repository triggers for automated actions on code changes.
 
 ## Contributing
